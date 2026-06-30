@@ -3,6 +3,11 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { DEFAULT_ENABLED_FIELDS } from "@/lib/cli/config";
+
+vi.mock("clipboardy", () => ({
+	default: { writeSync: vi.fn() },
+	writeSync: vi.fn(),
+}));
 import { generateTypeValues } from "@/lib/cli/generate-types";
 import { createProgram } from "./index";
 
