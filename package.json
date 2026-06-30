@@ -1,9 +1,8 @@
 {
-	"name": "falso",
-	"description": "CLI Fake content generator",
-	"private": true,
+	"name": "falso-cli",
+	"description": "Falso is CLI for generating fake data for local development and testing. This would reduce time spent on creating fake data or searching online tools with HUGE amount of ads.",
 	"type": "module",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"engines": {
 		"node": ">=22.12.0"
 	},
