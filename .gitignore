@@ -9,3 +9,5 @@ coverage
 .atl/
 openspec/
 .gga
+.opencode
+.agents
