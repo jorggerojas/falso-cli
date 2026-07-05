@@ -24,6 +24,10 @@
 	"scripts": {
 		"dev": "tsx src/index.ts",
 		"build": "tsup",
+		"raycast": "pnpm run raycast:build",
+		"raycast:build": "pnpm --dir raycast build",
+		"raycast:dev": "pnpm --dir raycast dev",
+		"raycast:preview": "pnpm --dir raycast preview",
 		"prepublishOnly": "pnpm build",
 		"lint": "biome check --write .",
 		"lint:ci": "biome ci",

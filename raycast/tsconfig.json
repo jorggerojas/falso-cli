@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"rootDir": ".",
+		"outDir": "dist",
+		"module": "ESNext",
+		"target": "ES2022",
+		"lib": ["ES2022"],
+		"moduleResolution": "bundler",
+		"types": ["node", "react", "react-dom"],
+		"sourceMap": true,
+		"declaration": true,
+		"declarationMap": true,
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitReturns": true,
+		"noImplicitOverride": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"skipLibCheck": true,
+		"ignoreDeprecations": "6.0",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx"
+	},
+	"include": ["src/**/*", "raycast-env.d.ts"],
+	"exclude": ["node_modules", "dist"]
+}

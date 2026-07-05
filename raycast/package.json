@@ -1,0 +1,59 @@
+{
+	"name": "falso-raycast",
+	"private": true,
+	"type": "module",
+	"version": "1.0.1",
+	"title": "Falso",
+	"description": "Falso Raycast extension for local fake data generation.",
+	"main": "dist/index.js",
+	"icon": "assets/icon.png",
+	"author": "jorggerojas",
+	"license": "MIT",
+	"platforms": [
+		"macOS"
+	],
+	"categories": [
+		"Developer Tools"
+	],
+	"commands": [
+		{
+			"name": "generate",
+			"title": "Generate Fake Data",
+			"description": "Generate one fake value or a short batch.",
+			"mode": "view"
+		},
+		{
+			"name": "fill",
+			"title": "Build Fill Payload",
+			"description": "Build a local JSON payload from enabled fields.",
+			"mode": "view"
+		},
+		{
+			"name": "config",
+			"title": "Manage Config",
+			"description": "View and update local config values.",
+			"mode": "view"
+		}
+	],
+	"scripts": {
+		"sync": "node scripts/sync-shared.mjs",
+		"predev": "pnpm run sync",
+		"dev": "ray develop",
+		"prebuild": "pnpm run sync",
+		"build": "ray build -e dist",
+		"prepreview": "pnpm run sync",
+		"preview": "ray build -e dist",
+		"lint": "ray lint",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@raycast/api": "1.104.21",
+		"react": "19.2.7",
+		"react-dom": "19.2.7"
+	},
+	"devDependencies": {
+		"@types/react": "19.2.17",
+		"@types/react-dom": "19.2.3",
+		"typescript": "6.0.3"
+	}
+}

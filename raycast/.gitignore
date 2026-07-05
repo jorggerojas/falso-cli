@@ -1,0 +1,5 @@
+node_modules
+dist
+src/lib/cli
+src/lib/generators
+raycast-env.d.ts
