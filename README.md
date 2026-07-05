@@ -1,12 +1,40 @@
 # falso-cli
 
-Falso is CLI for generating fake data for local development and testing. This would reduce time spent on creating fake data or searching online tools with HUGE amount of ads.
+Falso CLI creates fake data for developers, testers, and
+designers. It reduces time spent creating mock content or hunting ad-heavy
+online tools.
 
 It produces fake data, random text, structured mock objects, and reusable
 payloads for forms, QA workflows, UI mockups, demos, dashboards, and CMS
-entries, all from the terminal, with no network calls. 
+entries—all without network calls.
 
 Add custom values to the catalog and use them in the generation process.
+
+## Surfaces
+
+| Surface | Location | Best for |
+| ------- | -------- | -------- |
+| **CLI** | `falso` / `falso-cli` on npm | Scripts, pipes, automation, CI |
+| **Raycast** | [`raycast/`](./raycast/) | Quick copy from the launcher on macOS |
+
+The Raycast extension shares generators and config with the CLI. It is
+**not submitted to the Raycast Store** because Raycast already offers a
+[Lorem Ipsum](https://www.raycast.com/AntonNiklasson/lorem-ipsum) extension;
+Falso covers a broader set of structured fake data and stays in-repo for
+personal and contributor use. See [raycast/README.md](./raycast/README.md).
+
+## Compared to other tools
+
+**[Fake Filler](https://fakefiller.com)** is a solid browser extension for
+filling web forms in one shot. It only works in the browser, and it can
+sometimes populate more fields than you need. Falso is more general: use the
+CLI or Raycast to generate exactly the value or JSON payload you want, then
+paste it wherever you need it—browser, desktop app, terminal, or API client.
+
+For placeholder paragraphs inside Raycast, the built-in
+[Lorem Ipsum](https://www.raycast.com/AntonNiklasson/lorem-ipsum) extension
+remains the right default; Falso complements it with names, emails, personas,
+URLs, and the rest of the generator catalog.
 
 ## Installation
 
@@ -120,6 +148,21 @@ Use `config field remove` / `config field add` to customize the enabled fields.
 Config file is stored in `~/.config/falso/config.json` by default. You can change the path by setting `FALSO_CONFIG_PATH` environment variable.
 
 Using [`config` command](#config) you can manage the config file or directly edit it.
+
+## Raycast extension
+
+A companion Raycast extension lives in [`raycast/`](./raycast/). It exposes
+**Generate Fake Data**, **Build Fill Payload**, and **Manage Config** commands
+and reads the same config file as the CLI.
+
+```bash
+pnpm raycast:dev      # development mode
+pnpm raycast:build    # production build
+```
+
+Once you run build command, you can start using the extension in Raycast.
+
+Full setup, sync behavior, and store policy: [raycast/README.md](./raycast/README.md).
 
 ## Contributions
 

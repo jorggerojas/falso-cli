@@ -2,16 +2,30 @@
 
 ## Purpose
 
-Falso is a fast, local-first CLI fake content generator for developers, testers,
+Falso is a fast, local-first fake content generator for developers, testers,
 designers, and product builders.
 
 It generates fake data, random text, structured mock objects, and reusable
 payloads for forms, QA workflows, UI mockups, demos, dashboards, and CMS
-entries, all from the terminal.
+entries—from the terminal and, optionally, from a Raycast extension on macOS.
+
+## Distribution notes
+
+- **CLI** — published as `falso-cli` on npm.
+- **Raycast** — source lives in `raycast/`; **not submitted to the Raycast
+  Store**. Raycast already has a popular
+  [Lorem Ipsum](https://www.raycast.com/AntonNiklasson/lorem-ipsum) extension;
+  Falso targets structured fake data beyond placeholder text and stays in-repo
+  for personal/contributor installs.
+- **Alternatives** — [Fake Filler](https://fakefiller.com) is a useful browser
+  form filler but browser-only and sometimes over-fills fields. Falso is more
+  general (CLI, Raycast, clipboard) and lets the user pick exact types and
+  payloads.
 
 ## Project rules
 
-- This is a **CLI-only** project. Do not add a web UI, Astro, or other app frameworks.
+- Primary surface is the **CLI**. Do not add a web UI, Astro, or other app
+  frameworks beyond the existing Raycast extension in `raycast/`.
 - Use TypeScript everywhere with strict mode.
 - Use Commander for CLI parsing and subcommands.
 - Use Zod for input validation and generator contracts.
@@ -27,13 +41,13 @@ entries, all from the terminal.
 
 ## Current stack
 
-- TypeScript
-- Commander
-- Zod
-- tsup
-- Biome
-- Vitest
-- pnpm
+**CLI**
+
+- TypeScript, Commander, Zod, tsup, Biome, Vitest, pnpm
+
+**Raycast** (`raycast/`)
+
+- React 19, `@raycast/api`, TypeScript; shared generators synced from `src/lib/`
 
 ## Scripts
 
@@ -46,6 +60,9 @@ entries, all from the terminal.
 - `pnpm test:watch` — run Vitest in watch mode.
 - `pnpm release` — patch release via `standard-version`.
 - `pnpm release:minor` / `release:patch` / `release:major` — explicit semver bumps.
+- `pnpm raycast:dev` — Raycast extension in development mode.
+- `pnpm raycast:build` — build the Raycast extension.
+- `pnpm raycast:preview` — build for local Raycast preview.
 
 ## CLI commands
 
@@ -146,6 +163,17 @@ set.
 - `src/lib/generators/` — generator implementations (person, web, content, helpers, contracts).
 - `src/lib/contracts/` — shared types and schemas.
 - `src/data/` — catalog entries and typed datasets.
+- `raycast/` — Raycast extension (React + `@raycast/api`). UI in `raycast/src/*.tsx`;
+  `raycast/scripts/sync-shared.mjs` copies `src/lib/cli` and `src/lib/generators`
+  into `raycast/src/lib` before dev/build—edit shared logic in the root `src/`
+  tree, not the synced copies.
+
+## Raycast extension
+
+Commands: **Generate Fake Data**, **Build Fill Payload**, **Manage Config**.
+Uses the same `~/.config/falso/config.json` as the CLI. Do not publish to the
+Raycast Store; document changes in `raycast/README.md` when behavior or install
+steps change.
 
 ## Working guidelines
 
