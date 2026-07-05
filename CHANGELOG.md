@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/jorggerojas/falso/compare/v1.0.1...v1.1.0) (2026-07-05)
+
+
+### Features
+
+* add Raycast extension wrapper for Falso CLI ([1e5780c](https://github.com/jorggerojas/falso/commit/1e5780cdf9f49cfa20eaee306ba172ab76d9a7b7))
+
+
+### Documentation
+
+* document Raycast extension setup, surfaces, and comparison ([da1b71b](https://github.com/jorggerojas/falso/commit/da1b71bece6430f1277d535b8a808f4529b3b404))
+
 ### 1.0.1 (2026-07-01)
 
 
