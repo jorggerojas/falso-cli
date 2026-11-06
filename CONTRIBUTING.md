@@ -69,18 +69,18 @@ pnpm lint:ci   # check only, no writes (matches CI)
 
 ### Commit types
 
-| Type | Use for |
-| ---- | ------- |
-| `feat` | New CLI commands, generators, or user-facing behavior |
-| `fix` | Bug fixes |
-| `content` | Catalog data, locales, or fake-data content updates |
-| `docs` | README, CONTRIBUTING, or other documentation |
-| `test` | Tests only |
-| `refactor` | Code changes without behavior changes |
-| `perf` | Performance improvements |
-| `build` | Build or bundling changes |
-| `ci` | CI/CD changes |
-| `chore` | Maintenance (hidden from changelog) |
+| Type       | Use for                                               |
+| ---------- | ----------------------------------------------------- |
+| `feat`     | New CLI commands, generators, or user-facing behavior |
+| `fix`      | Bug fixes                                             |
+| `content`  | Catalog data, locales, or fake-data content updates   |
+| `docs`     | README, CONTRIBUTING, or other documentation          |
+| `test`     | Tests only                                            |
+| `refactor` | Code changes without behavior changes                 |
+| `perf`     | Performance improvements                              |
+| `build`    | Build or bundling changes                             |
+| `ci`       | CI/CD changes                                         |
+| `chore`    | Maintenance (hidden from changelog)                   |
 
 Examples:
 

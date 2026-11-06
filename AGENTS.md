@@ -85,33 +85,33 @@ falso generate password
 falso generate url --domain example.dev --slug "Team Launch"
 ```
 
-| Type | Output |
-| ---- | ------ |
-| `name` | First or given name |
-| `email` | Email address |
-| `address` | Address |
-| `city` | City |
-| `state` | State |
-| `zip` | Zip code |
-| `country` | Country |
-| `phone` | Phone number |
-| `website` | Website |
-| `company` | Company |
-| `job-title` | Job title |
-| `url` | URL |
-| `ip` | IP address |
-| `ipv6` | IPv6 address |
-| `mac` | MAC address |
-| `uuid` | UUID |
-| `binary` | Binary data |
-| `hex` | Hexadecimal data |
-| `octal` | Octal data |
-| `decimal` | Decimal data |
-| `full-name` | First and last name |
-| `username` | Username / handle |
-| `persona` | Structured person profile (name, email, username, etc.) |
-| `paragraph` | Lorem-style paragraph (length from config) |
-| `password` | Random password |
+| Type        | Output                                                  |
+| ----------- | ------------------------------------------------------- |
+| `name`      | First or given name                                     |
+| `email`     | Email address                                           |
+| `address`   | Address                                                 |
+| `city`      | City                                                    |
+| `state`     | State                                                   |
+| `zip`       | Zip code                                                |
+| `country`   | Country                                                 |
+| `phone`     | Phone number                                            |
+| `website`   | Website                                                 |
+| `company`   | Company                                                 |
+| `job-title` | Job title                                               |
+| `url`       | URL                                                     |
+| `ip`        | IP address                                              |
+| `ipv6`      | IPv6 address                                            |
+| `mac`       | MAC address                                             |
+| `uuid`      | UUID                                                    |
+| `binary`    | Binary data                                             |
+| `hex`       | Hexadecimal data                                        |
+| `octal`     | Octal data                                              |
+| `decimal`   | Decimal data                                            |
+| `full-name` | First and last name                                     |
+| `username`  | Username / handle                                       |
+| `persona`   | Structured person profile (name, email, username, etc.) |
+| `paragraph` | Lorem-style paragraph (length from config)              |
+| `password`  | Random password                                         |
 
 Use `--count` with any generator. Use `--locale` for locale-aware generators.
 Use `--domain` for `email` and `url`, and use `--path` or `--slug` for `url`.
