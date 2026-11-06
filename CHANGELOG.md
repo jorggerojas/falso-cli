@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/jorggerojas/falso/compare/v1.1.0...v1.1.1) (2026-11-06)
+
+
+### Features
+
+* add LICENSE ([21cfee5](https://github.com/jorggerojas/falso/commit/21cfee596916971dc808b13a7a175b3b5cd06edb))
+
+
+### Code Refactoring
+
+* update documentation formatting and improve build script ([7cd7fa5](https://github.com/jorggerojas/falso/commit/7cd7fa5c423ce76415044d99479ceae6b86dd2de))
+
 ## [1.1.0](https://github.com/jorggerojas/falso/compare/v1.0.1...v1.1.0) (2026-07-05)
 
 ### Features
