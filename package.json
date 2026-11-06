@@ -23,7 +23,7 @@
 	],
 	"scripts": {
 		"dev": "tsx src/index.ts",
-		"build": "tsup",
+		"build": "tsup && tsc --project tsconfig.build.json --declaration --emitDeclarationOnly",
 		"raycast": "pnpm run raycast:build",
 		"raycast:build": "pnpm --dir raycast build",
 		"raycast:dev": "pnpm --dir raycast dev",

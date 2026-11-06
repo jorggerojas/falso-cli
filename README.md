@@ -12,10 +12,10 @@ Add custom values to the catalog and use them in the generation process.
 
 ## Surfaces
 
-| Surface | Location | Best for |
-| ------- | -------- | -------- |
-| **CLI** | `falso` / `falso-cli` on npm | Scripts, pipes, automation, CI |
-| **Raycast** | [`raycast/`](./raycast/) | Quick copy from the launcher on macOS |
+| Surface     | Location                     | Best for                              |
+| ----------- | ---------------------------- | ------------------------------------- |
+| **CLI**     | `falso` / `falso-cli` on npm | Scripts, pipes, automation, CI        |
+| **Raycast** | [`raycast/`](./raycast/)     | Quick copy from the launcher on macOS |
 
 The Raycast extension shares generators and config with the CLI. It is
 **not submitted to the Raycast Store** because Raycast already offers a
@@ -71,34 +71,33 @@ falso <type>
 falso name --count 10
 ```
 
-
-| Type | Output |
-| ---- | ------ |
-| `name` | First or given name |
-| `email` | Email address |
-| `address` | Address |
-| `city` | City |
-| `state` | State |
-| `zip` | Zip code |
-| `country` | Country |
-| `phone` | Phone number |
-| `website` | Website |
-| `company` | Company |
-| `job-title` | Job title |
-| `url` | URL |
-| `ip` | IP address |
-| `ipv6` | IPv6 address |
-| `mac` | MAC address |
-| `uuid` | UUID |
-| `binary` | Binary data |
-| `hex` | Hexadecimal data |
-| `octal` | Octal data |
-| `decimal` | Decimal data |
-| `full-name` | First and last name |
-| `username` | Username / handle |
-| `persona` | Structured person profile (name, email, username, etc.) |
-| `paragraph` | Lorem-style paragraph (length from config) |
-| `password` | Random password |
+| Type        | Output                                                  |
+| ----------- | ------------------------------------------------------- |
+| `name`      | First or given name                                     |
+| `email`     | Email address                                           |
+| `address`   | Address                                                 |
+| `city`      | City                                                    |
+| `state`     | State                                                   |
+| `zip`       | Zip code                                                |
+| `country`   | Country                                                 |
+| `phone`     | Phone number                                            |
+| `website`   | Website                                                 |
+| `company`   | Company                                                 |
+| `job-title` | Job title                                               |
+| `url`       | URL                                                     |
+| `ip`        | IP address                                              |
+| `ipv6`      | IPv6 address                                            |
+| `mac`       | MAC address                                             |
+| `uuid`      | UUID                                                    |
+| `binary`    | Binary data                                             |
+| `hex`       | Hexadecimal data                                        |
+| `octal`     | Octal data                                              |
+| `decimal`   | Decimal data                                            |
+| `full-name` | First and last name                                     |
+| `username`  | Username / handle                                       |
+| `persona`   | Structured person profile (name, email, username, etc.) |
+| `paragraph` | Lorem-style paragraph (length from config)              |
+| `password`  | Random password                                         |
 
 Current generator options:
 

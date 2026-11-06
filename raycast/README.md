@@ -19,22 +19,22 @@ quick copy-to-clipboard from Raycast.
 
 ## Compared to other tools
 
-| Tool | Scope | Notes |
-| ---- | ----- | ----- |
-| **Falso (CLI + Raycast)** | Terminal, Raycast, any app via clipboard | Local-first, no network. You pick the type and copy exactly what you need. |
-| [Fake Filler](https://fakefiller.com) | Browser only | Excellent for web forms, but it only runs in the browser and sometimes fills more fields than you intended. |
-| [Lorem Ipsum (Raycast)](https://www.raycast.com/AntonNiklasson/lorem-ipsum) | Raycast → clipboard | Great for placeholder paragraphs; does not cover structured fake data. |
+| Tool                                                                        | Scope                                    | Notes                                                                                                       |
+| --------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Falso (CLI + Raycast)**                                                   | Terminal, Raycast, any app via clipboard | Local-first, no network. You pick the type and copy exactly what you need.                                  |
+| [Fake Filler](https://fakefiller.com)                                       | Browser only                             | Excellent for web forms, but it only runs in the browser and sometimes fills more fields than you intended. |
+| [Lorem Ipsum (Raycast)](https://www.raycast.com/AntonNiklasson/lorem-ipsum) | Raycast → clipboard                      | Great for placeholder paragraphs; does not cover structured fake data.                                      |
 
 Falso is more general: one generator surface for QA, demos, CMS drafts, and
 mock APIs—not tied to a single browser tab or text-only placeholders.
 
 ## Commands
 
-| Command | Description |
-| ------- | ----------- |
-| **Generate Fake Data** | Pick a generator type, optional batch count, view result, copy to clipboard. |
-| **Build Fill Payload** | Build JSON from enabled config fields and copy it to the clipboard. |
-| **Manage Config** | View settings, paragraph size, enabled fill fields, and custom catalog values. |
+| Command                | Description                                                                    |
+| ---------------------- | ------------------------------------------------------------------------------ |
+| **Generate Fake Data** | Pick a generator type, optional batch count, view result, copy to clipboard.   |
+| **Build Fill Payload** | Build JSON from enabled config fields and copy it to the clipboard.            |
+| **Manage Config**      | View settings, paragraph size, enabled fill fields, and custom catalog values. |
 
 Config is shared with the CLI at `~/.config/falso/config.json` (or
 `FALSO_CONFIG_PATH` when set).

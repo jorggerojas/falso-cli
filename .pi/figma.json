@@ -1,0 +1,6 @@
+{
+	"$comment": "Get a PAT at https://www.figma.com/developers/api#access-tokens",
+	"personalAccessToken": "YOUR_FIGMA_PERSONAL_ACCESS_TOKEN",
+	"outputDir": "./figma-assets",
+	"teamId": ""
+}
